@@ -1,13 +1,11 @@
 package game.characters;
 
-public class Character {
+public class Monster {
 	
 	private String nick;
 	private Characteristics characteristics;
 	
 	private int level = 0;
-	private int xp = 0;
-	private int money = 0;
 	private int hp = 100;
 	
 	public String getNick() {
@@ -28,18 +26,6 @@ public class Character {
 	public void setLevel(int level) {
 		this.level = level;
 	}
-	public int getXp() {
-		return xp;
-	}
-	public void setXp(int xp) {
-		this.xp = xp;
-	}
-	public int getMoney() {
-		return money;
-	}
-	public void setMoney(int money) {
-		this.money = money;
-	}
 	public int getHp() {
 		return hp;
 	}
@@ -47,11 +33,15 @@ public class Character {
 		this.hp = hp;
 	}
 	
+	
 	@Override
 	public String toString() {
-		return "Character [nick=" + nick + ", characteristics=" + characteristics + ", level=" + level + ", xp=" + xp
-				+ ", money=" + money + ", hp=" + hp + "]";
-	}	
+		return "Monster [nick=" + nick + ", characteristics=" + characteristics + ", level=" + level + ", hp=" + hp
+				+ "]";
+	}
+	
+	
+	
 	
 
 }
