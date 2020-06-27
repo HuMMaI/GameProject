@@ -5,6 +5,7 @@ import game.characters.Dealer;
 
 public class City {
 	
+	private String name;	
 	private Dealer dealer;
 	private Blacksmith blacksmith;
 	
